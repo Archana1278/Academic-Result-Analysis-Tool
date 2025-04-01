@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PES College of Engineering - SGPA Input</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('college.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        /* Top Section Styling */
+        .top-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .top-section img {
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .top-section img:hover {
+            transform: scale(1.1);
+        }
+        .college-info {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .college-info h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        .college-info p {
+            font-size: 1rem;
+            margin: 5px 0 0;
+            font-weight: 400;
+        }
+        .right-logo {
+            text-align: right; /* Align the right logo to the edge */
+            margin-left: auto; /* Push it to the far right */
+        }
+        .logo-links {
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .logo-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease-in-out;
+        }
+        .logo-links a:hover {
+            color: #ffcc00;
+        }
+        /* Header Section */
+        header {
+            margin-top: 50px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: hsl(251, 100%, 20%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header h2{font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: hsl(251, 100%, 20%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: hsl(251, 100%, 20%);
+            margin-bottom: 30px;
+        }
+        /* Form Styling */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: slideUp 1.5s ease-in-out;
+        }
+        .form-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #ffcc00;
+            box-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+        }
+        .btn-primary {
+            background-color: #ffcc00;
+            border: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #e6b800;
+        }
+        .btn-secondary {
+            background-color: #003366;
+            border: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-secondary:hover {
+            background-color: #00264d;
+        }
+        sgpa-input-section {
+            background-color: #003366; /* Dark blue background */
+            color: #ffffff; /* White text for contrast */
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Section -->
+    <div class="top-section">
+        <div class="left-logo">
+            <img src="logo-left.png" alt="Left Logo"> <!-- Left Logo -->
+            <div class="logo-links">
+                <a href="index.html"><i class="fas fa-home"></i> Dashboard</a> | 
+                <a href="results.html"><i class="fas fa-chart-bar"></i> Results</a>
+            </div>
+        </div>
+        <div class="college-info">
+            <h1>P.E.S COLLEGE OF ENGINEERING</h1>
+            <p>(An Autonomous Institution Affiliated to VTU, Belagavi)</p>
+            <p>K V Shankaragowda Rd, PES College Campus, Mandya, Karnataka - 571401</p>
+        </div>
+        <div class="right-logo">
+            <img src="logo-right.png" alt="Right Logo"> <!-- Right Logo -->
+            <div class="logo-links">
+                <a href="sgpa_input.html"><i class="fas fa-calculator"></i> SGPA Input</a> | 
+                <a href="login.html" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="text-center mt-5 pt-5">
+        <h1>SGPA Input</h1>
+        <p>Enter SGPA values for student performance prediction.</p>
+    </header>
+
+    <div class="container">
+        <h2>Student Performance Prediction</h2>
+        <label for="sgpa-input">Enter SGPA (comma-separated):</label>
+        <input type="text" id="sgpa-input" placeholder="e.g., 7.8, 8.9"><br>
+        <button onclick="predictPerformance()" class="btn btn-secondary ms-2">Predict</button>
+        <a href="index.html" class="btn btn-secondary ms-2">Back</a>
+        <p id="prediction-result"></p>
+    </div>
+
+    
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
